@@ -1,24 +1,21 @@
 ---
 import Button from "@components/ui/Button.astro";
+import Grid from "@components/ui/Grid.astro";
 import MainLayout from "@layouts/MainLayout.astro";
 ---
 
-<MainLayout>
-	<div class="p-10 grid gap-4">
-		<h1
-			class:list={[
-				"card max-w-sm animate-spin animate-duration-1000 animate-once",
-			]}>
-			Hello World
-		</h1>
-		<div class="flex items-end gap-2">
-			<Button variant={"default"} size={"xs"}>xs Default</Button>
-			<Button variant={"dark"} size={"sm"}>sm Dark</Button>
-			<Button variant={"alternative"} size={"default"}>
-				default Alternative
-			</Button>
-			<Button variant={"green"} size={"lg"}>lg Green</Button>
-			<Button variant={"purple"} size={"xl"}>xl Purple</Button>
-		</div>
-	</div>
+<MainLayout
+  title="Detikcom Project."
+  description="Welcome to Detikcom Project!">
+  <Grid className="mb-8" sidebarClassName="gap-4">
+    <div class="flex items-end gap-2">
+      <Button variant={"default"} size={"xs"}>xs Default</Button>
+      <Button variant={"dark"} size={"sm"}>sm Dark</Button>
+      <Button variant={"alternative"} size={"default"}>
+        default Alternative
+      </Button>
+      <Button variant={"green"} size={"lg"}>lg Green</Button>
+      <Button variant={"purple"} size={"xl"}>xl Purple</Button>
+    </div>
+  </Grid>
 </MainLayout>

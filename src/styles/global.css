@@ -4,6 +4,15 @@
 
 @import "./fonts" layer(base);
 
+@layer base {
+  /* This will be included in your compiled CSS */
+  body {
+    font-family: "Montserrat", "Montserrat-fallback";
+    /* The value doesn't matter, but you must specify a line-height for all text with custom fonts to avoid CLS */
+    line-height: 1.5em;
+  }
+}
+
 @layer components {
   /* This won't be included in your compiled CSS unless you actually use it */
   .card {
