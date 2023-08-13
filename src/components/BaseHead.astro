@@ -1,5 +1,5 @@
 ---
-import "@styles/global.css";
+import "@/styles/global.css";
 
 export interface Props {
   title: string;
@@ -8,7 +8,7 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-import { BASE_URL } from "@helpers/consts";
+import { BASE_URL } from "@/consts";
 
 const { title, description } = Astro.props;
 ---
