@@ -41,11 +41,14 @@ interface Props {
   variant?: VariantProps<typeof buttonVariants>["variant"];
   size?: VariantProps<typeof buttonVariants>["size"];
   className?: string;
+  isButton?: boolean;
 }
 
-const { variant, size, className } = Astro.props;
+const { variant, size, className, isButton = true, ...rest } = Astro.props;
+
+const Tag = isButton ? "button" : "a";
 ---
 
-<button class={cn(buttonVariants({ variant, size, className }))}>
+<Tag class={cn(buttonVariants({ variant, size, className }))} {...rest}>
   <slot>Default</slot>
-</button>
+</Tag>

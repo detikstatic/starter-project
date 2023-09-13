@@ -1,6 +1,7 @@
 ---
 import Button from "@/components/ui/Button.astro";
 import Grid from "@/components/ui/Grid.astro";
+import Heading from "@/components/ui/Heading.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
 ---
 
@@ -8,8 +9,11 @@ import MainLayout from "@/layouts/MainLayout.astro";
   title="Detikcom Project."
   description="Welcome to Detikcom Project!">
   <Grid className="mb-8" sidebarClassName="gap-4">
+    <Heading size="h3" tagType="h1" data-header="head">Test heading</Heading>
     <div class="flex items-end gap-2">
-      <Button variant={"default"} size={"xs"}>xs Default</Button>
+      <Button href="#" variant={"default"} size={"xs"} isButton={false}>
+        xs Default
+      </Button>
       <Button variant={"dark"} size={"sm"}>sm Dark</Button>
       <Button variant={"alternative"} size={"default"}>
         default Alternative
