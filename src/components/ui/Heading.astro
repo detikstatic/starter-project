@@ -17,29 +17,27 @@ type Props = {
   size: keyof typeof sizeOptions;
   bolded?: boolean;
   visible?: boolean;
-  classes?: string;
+  className?: string;
 };
 
 const {
-  tagType,
+  tagType: Tag,
   size,
-  classes,
+  className,
   visible = true,
   bolded = true,
   ...rest
 } = Astro.props;
 
-const Tag = tagType;
-
-const finalClasses = cn(
+const finalClassName = cn(
   "font-sans",
   sizeOptions[size],
   bolded === true ? "font-bold" : "",
   visible === true ? "" : "sr-only",
-  classes
+  className
 );
 ---
 
-<Tag class={finalClasses} {...rest}>
+<Tag class={finalClassName} {...rest}>
   <slot />
 </Tag>

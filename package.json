@@ -1,7 +1,7 @@
 {
   "name": "detikstatic",
   "type": "module",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,7 +13,7 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
-    "astro": "^3.0.12",
+    "astro": "^3.0.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "sass": "^1.66.1",
