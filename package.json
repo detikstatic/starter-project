@@ -2,6 +2,9 @@
   "name": "detikstatic",
   "type": "module",
   "version": "3.1.0",
+  "trustedDependencies": [
+    "sharp"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
