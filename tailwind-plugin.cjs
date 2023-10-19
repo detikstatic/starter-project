@@ -13,11 +13,9 @@ module.exports = plugin(
     });
     addComponents({
       ".swap": {
-        "@apply relative inline-grid cursor-pointer select-none place-content-center":
-          {},
+        "@apply relative inline-grid cursor-pointer select-none place-content-center": {},
         "& > *": {
-          "@apply col-start-1 row-start-1 transition-opacity transition-transform duration-300 ease-out":
-            {},
+          "@apply col-start-1 row-start-1 transition-opacity transition-transform duration-300 ease-out": {},
         },
         "& input": {
           "@apply appearance-none hidden": {},
@@ -25,46 +23,38 @@ module.exports = plugin(
         "& .swap-on, & .swap-indeterminate, & input:indeterminate ~ .swap-on": {
           "@apply opacity-0": {},
         },
-        "& input:checked ~ .swap-off, &.swap-active .swap-off, & input:indeterminate ~ .swap-off":
-          {
-            "@apply opacity-0": {},
-          },
-        "& input:checked ~ .swap-on, &.swap-active .swap-on, & input:indeterminate ~ .swap-indeterminate":
-          {
-            "@apply opacity-100": {},
-          },
-        "&.swap-rotate .swap-on, &.swap-rotate .swap-indeterminate, &.swap-rotate input:indeterminate ~ .swap-on":
-          {
-            "@apply rotate-45": {},
-          },
-        "&.swap-rotate input:checked ~ .swap-off, &.swap-rotate.swap-active .swap-off, &.swap-rotate input:indeterminate ~ .swap-off":
-          {
-            "@apply -rotate-45": {},
-          },
-        "&.swap-rotate input:checked ~ .swap-on, &.swap-rotate.swap-active .swap-on, &.swap-rotate input:indeterminate ~ .swap-indeterminate":
-          {
-            "@apply rotate-0": {},
-          },
+        "& input:checked ~ .swap-off, &.swap-active .swap-off, & input:indeterminate ~ .swap-off": {
+          "@apply opacity-0": {},
+        },
+        "& input:checked ~ .swap-on, &.swap-active .swap-on, & input:indeterminate ~ .swap-indeterminate": {
+          "@apply opacity-100": {},
+        },
+        "&.swap-rotate .swap-on, &.swap-rotate .swap-indeterminate, &.swap-rotate input:indeterminate ~ .swap-on": {
+          "@apply rotate-45": {},
+        },
+        "&.swap-rotate input:checked ~ .swap-off, &.swap-rotate.swap-active .swap-off, &.swap-rotate input:indeterminate ~ .swap-off": {
+          "@apply -rotate-45": {},
+        },
+        "&.swap-rotate input:checked ~ .swap-on, &.swap-rotate.swap-active .swap-on, &.swap-rotate input:indeterminate ~ .swap-indeterminate": {
+          "@apply rotate-0": {},
+        },
         "&.swap-flip": {
           transformStyle: "preserve-3d",
           perspective: "16em",
         },
-        "&.swap-flip .swap-on, &.swap-flip .swap-indeterminate, &.swap-flip input:indeterminate ~ .swap-on":
-          {
-            "@apply opacity-100": {},
-            transform: "rotateY(180deg)",
-            backfaceVisibility: "hidden",
-          },
-        "&.swap-flip input:checked ~ .swap-off, &.swap-flip.swap-active .swap-off, &.swap-flip input:indeterminate ~ .swap-off":
-          {
-            "@apply opacity-100": {},
-            transform: "rotateY(-180deg)",
-            backfaceVisibility: "hidden",
-          },
-        "&.swap-flip input:checked ~ .swap-on, &.swap-flip.swap-active .swap-on, &.swap-flip input:indeterminate ~ .swap-indeterminate":
-          {
-            transform: "rotateY(0deg)",
-          },
+        "&.swap-flip .swap-on, &.swap-flip .swap-indeterminate, &.swap-flip input:indeterminate ~ .swap-on": {
+          "@apply opacity-100": {},
+          transform: "rotateY(180deg)",
+          backfaceVisibility: "hidden",
+        },
+        "&.swap-flip input:checked ~ .swap-off, &.swap-flip.swap-active .swap-off, &.swap-flip input:indeterminate ~ .swap-off": {
+          "@apply opacity-100": {},
+          transform: "rotateY(-180deg)",
+          backfaceVisibility: "hidden",
+        },
+        "&.swap-flip input:checked ~ .swap-on, &.swap-flip.swap-active .swap-on, &.swap-flip input:indeterminate ~ .swap-indeterminate": {
+          transform: "rotateY(0deg)",
+        },
       },
       ".modal": {
         "@apply isolate pointer-events-none fixed grid h-full max-h-none w-full max-w-none justify-items-center opacity-0 overscroll-contain z-50 bg-transparent text-inherit duration-200 ease-out transition-all overflow-y-hidden m-0 p-0 inset-0 backdrop:bg-black/30 backdrop:animate-fade backdrop:animate-ease-out backdrop:animate-duration-200 open:pointer-events-auto open:visible open:opacity-100":
@@ -95,8 +85,7 @@ module.exports = plugin(
             {},
         },
         "&-backdrop": {
-          "@apply -z-[1] col-start-1 row-start-1 grid self-stretch justify-self-stretch text-transparent":
-            {},
+          "@apply -z-[1] col-start-1 row-start-1 grid self-stretch justify-self-stretch text-transparent": {},
           "& button": {
             "@apply cursor-default": {},
           },
@@ -105,10 +94,9 @@ module.exports = plugin(
           backgroundColor: "rgba(0, 0, 0, 0.3)",
           animation: "modal-pop 0.2s ease-out",
         },
-        "&-open &-box, &-toggle:checked + & &-box, &:target &-box, &[open] &-box":
-          {
-            "@apply scale-100 translate-y-0": {},
-          },
+        "&-open &-box, &-toggle:checked + & &-box, &:target &-box, &[open] &-box": {
+          "@apply scale-100 translate-y-0": {},
+        },
         "&-action > :not([hidden]) ~ :not([hidden])": {
           " --tw-space-x-reverse": "0",
           marginRight: "calc(0.5rem * var(--tw-space-x-reverse))",
@@ -124,16 +112,13 @@ module.exports = plugin(
           "@apply place-items-end": {},
         },
         "&-top :where(&-box)": {
-          "@apply w-full max-w-none -translate-y-10 scale-100 rounded-t-none rounded-b-2xl":
-            {},
+          "@apply w-full max-w-none -translate-y-10 scale-100 rounded-t-none rounded-b-2xl": {},
         },
         "&-middle :where(&-box)": {
-          "@apply w-11/12 max-w-lg translate-y-0 scale-90 rounded-t-2xl rounded-b-2xl":
-            {},
+          "@apply w-11/12 max-w-lg translate-y-0 scale-90 rounded-t-2xl rounded-b-2xl": {},
         },
         "&-bottom :where(&-box)": {
-          "@apply w-full max-w-none translate-y-10 scale-100 rounded-b-none rounded-t-2xl":
-            {},
+          "@apply w-full max-w-none translate-y-10 scale-100 rounded-b-none rounded-t-2xl": {},
         },
       },
       ".form-group": {
@@ -143,8 +128,7 @@ module.exports = plugin(
         },
       },
       ".form-label": {
-        "@apply font-medium text-base leading-[22px] text-[#260d13] inline-block mb-2":
-          {},
+        "@apply font-medium text-base leading-[22px] text-[#260d13] inline-block mb-2": {},
       },
       ".form-helper-text": {
         "@apply text-[#666666] font-normal text-xs mt-1": {},
@@ -160,8 +144,7 @@ module.exports = plugin(
         "&[type='file']": {
           "@apply p-0": {},
           "&::file-selector-button": {
-            "@apply pl-8 pr-4 py-2.5 border-0 bg-[#802c40] text-white cursor-pointer text-sm font-medium mr-4 -ml-4":
-              {},
+            "@apply pl-8 pr-4 py-2.5 border-0 bg-[#802c40] text-white cursor-pointer text-sm font-medium mr-4 -ml-4": {},
           },
         },
         "&[type='color']": {
@@ -213,13 +196,11 @@ module.exports = plugin(
           "@apply w-[1em] h-[1em] rounded-full bg-white bg-no-repeat bg-center bg-contain border appearance-none border-solid border-black/25 p-0 cursor-pointer checked:bg-[#802c40] checked:border-[#802c40]":
             {},
           "&:checked": {
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e\")",
+            backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e\")",
           },
         },
         "&[role='switch']": {
-          "@apply flex w-12 h-6 items-center bg-no-repeat rounded-[2em] border-black/25 p-0 cursor-pointer":
-            {},
+          "@apply flex w-12 h-6 items-center bg-no-repeat rounded-[2em] border-black/25 p-0 cursor-pointer": {},
           backgroundImage:
             "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e\")",
           backgroundPosition: "left center",
@@ -233,10 +214,8 @@ module.exports = plugin(
             "@apply text-[10px] mr-2 ml-auto text-black/40": {},
           },
           "&:checked": {
-            "@apply bg-[#802c40] border-[#802c40] bg-right-top bg-auto text-[#802c40]":
-              {},
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")",
+            "@apply bg-[#802c40] border-[#802c40] bg-right-top bg-auto text-[#802c40]": {},
+            backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")",
             "&::after": {
               "@apply text-white ml-2 mr-auto": {},
               content: '"On"',
@@ -245,21 +224,18 @@ module.exports = plugin(
         },
       },
       ".form-preview": {
-        "@apply border rounded bg-[#f7f7f7] isolate p-4 border-solid border-[#e6e6e6]":
-          {},
+        "@apply border rounded bg-[#f7f7f7] isolate p-4 border-solid border-[#e6e6e6]": {},
         "& > *": {
           "@apply last:mt-3": {},
         },
         "&-label": {
-          "@apply rounded overflow-hidden aspect-[4/3] relative w-full block cursor-pointer":
-            {},
+          "@apply rounded overflow-hidden aspect-[4/3] relative w-full block cursor-pointer": {},
           "& > img": {
             "@apply w-full h-full object-cover absolute inset-0": {},
           },
         },
         "&-delete": {
-          "@apply flex justify-center items-center gap-1 bg-[#c31f47] rounded text-white absolute w-auto h-auto text-sm px-1.5 py-1 border-0 left-auto right-2 top-2":
-            {},
+          "@apply flex justify-center items-center gap-1 bg-[#c31f47] rounded text-white absolute w-auto h-auto text-sm px-1.5 py-1 border-0 left-auto right-2 top-2": {},
           "&:before": {
             width: "16px",
             height: "16px",
@@ -278,10 +254,9 @@ module.exports = plugin(
       ".invalid-feedback": {
         "@apply text-[#c31f47] text-sm font-normal mt-1 hidden": {},
       },
-      ".is-invalid ~ .invalid-feedback, .is-invalid ~ .invalid-tooltip, .was-validated :invalid ~ .invalid-feedback, .was-validated :invalid ~ .invalid-tooltip":
-        {
-          "@apply block": {},
-        },
+      ".is-invalid ~ .invalid-feedback, .is-invalid ~ .invalid-tooltip, .was-validated :invalid ~ .invalid-feedback, .was-validated :invalid ~ .invalid-tooltip": {
+        "@apply block": {},
+      },
       ".btn": {
         "&-submit": {
           "@apply font-medium text-sm leading-5 tracking-[2px] text-[#f5f5ef] inline-flex items-center px-5 py-2.5 border-0 bg-[#802c40] flex-grow justify-center max-w-[231px]":
@@ -295,6 +270,32 @@ module.exports = plugin(
       ".form-button": {
         "@apply flex gap-4": {},
       },
+      ".no-scrollbar": {
+        "&": {
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+        },
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+      },
+      ".custom-scrollbar": {
+        "&::-webkit-scrollbar": {
+          width: "3px",
+          height: "3px",
+          borderRadius: "2px",
+        },
+        "&::-webkit-scrollbar-track": {
+          background: "#ffffff",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: "#888",
+          borderRadius: "50px",
+        },
+        "&::-webkit-scrollbar-thumb:hover": {
+          background: "#555",
+        },
+      },
     });
     addUtilities({
       ".content-auto": {
@@ -305,6 +306,21 @@ module.exports = plugin(
       },
       ".content-visible": {
         "content-visibility": "visible",
+      },
+      ".invert-colors": {
+        "@apply invert dark:invert-0": {},
+      },
+      ".flex-center": {
+        "@apply flex justify-center items-center": {},
+      },
+      ".flex-between": {
+        "@apply flex justify-between items-center": {},
+      },
+      ".flex-start": {
+        "@apply flex justify-start items-center": {},
+      },
+      ".no-focus": {
+        "@apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important": {},
       },
     });
     addVariant("hocus", ["&:hover", "&:focus"]);

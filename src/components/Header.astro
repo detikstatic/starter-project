@@ -1,20 +1,15 @@
 ---
-import { Image } from "astro:assets";
 import logoDetikcom from "@/assets/logo.png";
+import { Image } from "astro:assets";
 ---
 
-<header
-  id="header"
-  class="bg-white z-10 flex px-4 items-center pt-5 gap-2 h-auto max-w-6xl mx-auto justify-between pb-5 w-full">
+<header id="header" class="bg-white z-10 flex px-4 items-center pt-5 gap-2 h-auto max-w-6xl mx-auto justify-between pb-5 w-full">
   <a href="#" class="w-64">
     <Image src={logoDetikcom} alt="A description of my image." />
   </a>
   <div class="isolate block">
     <a href="#">
-      <img
-        src="http://online.detik.com/design/detik/assets/images/ads/grey-leaderboard.png"
-        alt=""
-      />
+      <img src="http://online.detik.com/design/detik/assets/images/ads/grey-leaderboard.png" alt="" />
     </a>
   </div>
 </header>
