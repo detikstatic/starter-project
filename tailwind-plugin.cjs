@@ -296,6 +296,9 @@ module.exports = plugin(
           background: "#555",
         },
       },
+      ".glass": {
+        "@apply backdrop-blur-sm backdrop-saturate-150 backdrop-contrast-150 bg-white/20 border border-white/20": {},
+      },
     });
     addUtilities({
       ".content-auto": {
